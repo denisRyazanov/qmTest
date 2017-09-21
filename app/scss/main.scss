@@ -1,0 +1,147 @@
+/*------------------------------------FONTS------------------------------------*/
+@font-face {
+	font-family: "LatoLight";
+	src: url("../assets/fonts/LatoLatinLight/LatoLatinLight.eot");
+	src: url("../assets/fonts/LatoLatinLight/LatoLatinLight.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/LatoLatinLight/LatoLatinLight.woff") format("woff"),
+		url("../assets/fonts/LatoLatinLight/LatoLatinLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.eot");
+	src: url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.woff") format("woff"),
+		url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/*-----------------------------------------endfonts----------------------------*/
+
+/*----------------------------------------IMPORT Parts------------------------*/
+@import 'parts/header';
+@import 'parts/footer';
+@import 'parts/media';
+/*--------------------------pageStiles--------------------------------*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+html {
+  font-size: 62.5%; }
+.wrapper {
+	font-family: "LatoLight";
+}
+.wrapper ul{
+	list-style: none;
+}
+.wrapper a{
+	text-decoration: none;
+	display: block;
+}
+.wrapper button {
+	border: none;
+	background: none;
+}
+.hidden {
+	display: none;
+}
+.clear {
+	clear: both;
+}
+/*--------------------------end PageStiles--------------------------------*/
+.banner {
+	position: relative;
+	top: 98px;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	background: #466368;
+	background: -webkit-linear-gradient(#7b28b1, #35eef6);
+	background:    -moz-linear-gradient(#7b28b1, #35eef6);
+	background:         linear-gradient(to right, #7b28b1, #35eef6);
+	margin-bottom: 17rem;
+	h1 {
+		font: 6rem/6rem  "LatoLight";
+		color: #fff;
+		padding-top: 105px;
+		margin-bottom: 1rem;
+	}
+	.banner__breadCrumbs {
+		width: 100%;
+			.banner__crumbs {
+			justify-content: center;
+			display: flex;
+			li {
+				margin-right: 1rem;
+				a {
+					font: 1.6rem/2.4rem "LatoRegular";
+					color: #ecf0f1;
+					img {
+						padding-left: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+.mainContent {
+	width: 100%;
+	position: relative;
+	.mainContent__list {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 3rem;
+		li {
+
+			a {
+				font: 1.4rem/2.4rem "LatoRegular";
+				color: #34383d;
+				padding: .5rem 2.9rem;
+				border-top: 1px solid grey;
+				border-bottom: 1px solid grey;
+				border-left: 1px solid grey;
+			}
+			a:hover {
+				color: #fff;
+				background-color: #41bedd;
+			}
+			&:nth-of-type(5) a{
+				border-right: 1px solid grey;
+				border-radius: 0 5px 5px 0;
+			}
+			&:nth-of-type(1) a{
+				border-radius: 5px 0 0 5px;
+			}
+		}
+	}
+	.masonryContainer {
+		max-width: 1170px;
+		margin: 0 auto;
+		.grid-item {
+			margin-bottom: 3rem;
+			img {
+				border-radius: 5px;
+			}
+		}
+	}
+	.load {
+		width: 125px;
+		margin: 0 auto;
+		text-align: center;
+		font: 1.4rem/2.4rem "LatoRegular";
+		color: #34383d;
+		padding: 0.5rem 0;
+		border: 1px solid grey;
+		border-radius: 5px;
+		margin-bottom: 7rem;
+		margin-top: 1.5rem;
+		&:hover {
+			background-color: #41bedd;
+			color: #fff;
+		}
+	}
+}

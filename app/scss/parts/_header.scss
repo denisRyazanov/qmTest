@@ -1,0 +1,114 @@
+.header {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	.header__search_area {
+		display: none;
+	}
+	.fixedTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.header__logo {
+		margin-right: 34rem;
+		p {
+			padding: .5rem 0;
+			font: 3.6rem/2rem "LatoLight";
+			background: linear-gradient(45deg, #70269f 0%, #5df1f8 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			color: #0B2349;
+  			display: block;
+		}
+	}
+	.header__menu {
+		display: flex;
+		justify-content: flex-start;
+		li {
+			margin-right: 4.2rem;
+			position: relative;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				padding: 3.8rem 0;
+				position: relative;
+				display: flex;
+				justify-content: flex-start;
+				p {
+					display: inline;
+					float: left;
+					margin-right: 5px;
+					font: 1.8rem/2rem "LatoLight";
+					color: #34383d;
+					&:hover {
+						color: #41bedd;
+					}
+				}
+				.chevron {
+					margin-top: 9px;
+				}
+				
+			}
+			&:hover {
+				border-bottom: 2px solid #3fb8d6;
+			}
+			&:hover .subMenu {
+				display: block;
+			}
+			&:last-child {
+				margin-right: 3rem;
+			}
+		}
+		.subMenu {
+			display: none;
+			position: absolute;
+			top: 9.8rem;
+			left: -20px;
+			background-color: #fff;
+			width: 220px;
+			li {
+				border-top: 1px solid grey;
+				width: 100%;
+				a {
+					padding: 0;
+				}
+				p {
+					font: 1.6rem/4.3rem "LatoLight";
+					color: #34383d;
+					padding-left: 2rem;
+				}
+				.chevron {
+					i {
+						transform: rotate(-90deg);
+						margin-top: 1.1rem;
+					}
+				}
+			}
+		}
+	}
+	.header__search {
+		.header__search_button:hover {
+			cursor: pointer;
+			position: relative;
+		}
+		.activeSearch {
+			left: 50% !important;
+		}
+	}
+	.header__search_area {
+		display: block;
+		position: absolute;
+		height: 30px;
+		width: 50%;
+		left: -55%;
+		transition: left 1s;
+		border: 1px solid #4EA6DD;
+		border-radius: 5px;
+		margin-top: 2.6rem;
+	}
+}

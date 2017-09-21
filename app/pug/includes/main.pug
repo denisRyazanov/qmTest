@@ -1,0 +1,44 @@
+.banner
+	h1 3 Column Sortable Masonry Portfolio
+	.banner__breadCrumbs
+		ul.banner__crumbs
+			li
+				a(href="") Home
+					+ image("crumbs.png", "crumbs")
+			li
+				a(href="") Portfolio
+					+ image("crumbs.png", "crumbs")
+			li
+				a(href="") Sortable Masonry
+					+ image("crumbs.png", "crumbs")
+			li
+				a(href="") 3 Columns
+.mainContent
+	ul.mainContent__list
+		li
+			a(href="") All
+		li
+			a(href="") 3D
+		li
+			a(href="") Illustration
+		li
+			a(href="") Photography
+		li
+			a(href="") Web
+	.masonryContainer
+		.grid
+			.grid-item
+				+ image("img1.jpg", "image1")
+			.grid-item
+				+ image("img2.jpg", "image2")
+			.grid-item
+				+ image("img3.jpg", "image3")
+			.grid-item
+				+ image("img7.jpg", "image7")
+			.grid-item
+				+ image("img5.jpg", "image5")
+			.grid-item
+				+ image("img4.jpg", "image4")
+			.grid-item
+				+ image("img6.jpg", "image6")
+	a.load(href="") Load More

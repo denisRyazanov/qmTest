@@ -1,0 +1,85 @@
+.footer {
+	position: relative;
+	border-top: 1px solid #cbd0d4;
+	background-color: #ecf0f1;
+	.up {
+		position: absolute;
+		right: 2%;
+		top: -42px;
+	}
+	.arr {
+		width: 100%;
+		border-top: 1px solid #cbd0d4;
+		background-color: #e3e7e9;
+		p {
+			text-align: center;
+			color: #899096;
+			padding: 3rem 0;
+		}
+	}
+	.footerWrap{
+		display: flex;
+//		flex-flow: wrap;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding-bottom: 2rem;
+		i {
+			float: left;
+		}
+		.aboutUs {
+			width: 40%;
+		}
+		.address {
+			width: 18%;
+			i {
+				margin-top: 5.5rem;
+			}
+			p {
+				margin-left: 3rem;
+				margin-top: 5.5rem;
+				margin-bottom: 1.5rem;
+			}
+			a {
+				width: 190px;
+				padding: 0.5rem 0;
+				text-align: center;
+				font:600 1.4rem/2.4rem "LatoRegular";
+				color: #34383d;
+				
+				border: 1px solid grey;
+				border-radius: 5px;
+				&:hover {
+					border-color: #a255c4;
+					color: #a255c4;
+				}
+			}
+		}
+		.contact {
+			width: 20%;
+			i {
+				margin-bottom: 1rem;
+			}
+			p {
+				margin-left: 3rem;
+			}
+		}
+		.connect {
+			width: 22%;
+			i {
+				margin-right: 1rem;
+				margin-bottom: 1rem;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	h2 {
+		font: 2rem/5.5rem "LatoLight";
+		color: #34383d;
+	}
+	p {
+		font: 1.6rem/2.4rem "LatoLight";
+		color: #606366;
+	}
+}
